@@ -691,7 +691,7 @@ class DocumentViewer {
             .markdown-content blockquote {
                 position: relative;
                 margin: 1rem 0;
-                padding: 0.7rem 0.7rem 0.7rem 2.5rem;
+                padding: 1.5rem 0.7rem 1.5rem 2.5rem;
                 background: var(--bg-secondary);
                 border-left: 4px solid var(--primary-color);
                 border-radius: 0 8px 8px 0;
