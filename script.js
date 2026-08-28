@@ -920,6 +920,10 @@ class DocumentViewer {
             "Nuki开发": [
                 { name: "首页", path: "docs/Nuki开发日志/index.md" },
                 { name: "认识Adapter", path: "docs/Nuki开发日志/adapter.md" },
+            ],
+            "杂七杂八小教程": [
+                 { name: "错暑二文本配置", path: "docs/杂七杂八小教程/cuoshu2.md"},
+                 { name: "错暑二番外剧情", path: "docs/杂七杂八小教程/fanwai1.md"}
             ]
         };
 
@@ -928,7 +932,7 @@ class DocumentViewer {
             { name: "首页", path: "docs/index.md" },                         // 无 category → 上方独立
             { name: "更新日志", path: "docs/version.md" },                  // 无 category → 上方独立           // 归类
             { name: "Github介绍", path: "docs/README.md", category: "" , ender: 1 },  
-            { name: "Python基础语法", path: "docs/python.md", category: "" },  
+            { name: "Python基础语法", path: "docs/python.md", category: "" }
         ];
 
         // 构建最终分类（复制原始分类）
@@ -1034,7 +1038,7 @@ class DocumentViewer {
         Object.keys(this.fileStructure.categories).forEach(category => {
             const categoryId = this.getCategoryId(category);
             const files = this.fileStructure.categories[category];
-            const isMulti = files.length > 1;        // 是否多项（可折叠）
+            const isMulti = files.length > 0;        // 是否多项（可折叠）
             // 只有多项时才使用存储的状态，单项始终展开
             const isExpanded = isMulti ? (this.categoryStates[categoryId] !== false) : true;
 
