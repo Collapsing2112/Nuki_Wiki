@@ -493,7 +493,7 @@ class DocumentViewer {
                 border: none;
                 height: 1px;
                 background: #000000; /* 纯白 */
-                margin: 1.5rem 0;
+                margin: 0.8rem 0;
                 opacity: 0.8;        /* 微调透明度，避免太白刺眼，但保持清晰可见 */
             }
             
@@ -503,7 +503,7 @@ class DocumentViewer {
                 height: 1px;
                 background: var(--text-primary); /* 自动跟随文字颜色 */
                 opacity: 0.3;
-                margin: 1.5rem 0;
+                margin: 0.8rem 0;
             }
             
             /* 分类之间的分割线 */
@@ -691,7 +691,7 @@ class DocumentViewer {
             .markdown-content blockquote {
                 position: relative;
                 margin: 1rem 0;
-                padding: 1.5rem 0.7rem 1.5rem 2.5rem;
+                padding: 1rem 1.5rem 1rem 1.5rem;
                 background: var(--bg-secondary);
                 border-left: 4px solid var(--primary-color);
                 border-radius: 0 8px 8px 0;
@@ -701,7 +701,7 @@ class DocumentViewer {
             }
             
             .markdown-content blockquote::before {
-                content: '"';
+                content: '';
                 position: absolute;
                 left: 1rem;
                 top: 0.75rem;
